@@ -1,0 +1,552 @@
+@media only screen 
+and (min-width : 1600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: #F2F3F4;
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+        
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 5vw;
+        margin-left: 12.288vw;
+        padding-right: 0.625vw;
+    }
+    
+    #company-name {
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+        margin-right: 4.6vw;
+    }
+
+    /* register */
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+        margin-left: 3vw;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    #support {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5vw;
+    }
+
+    #session {
+        color: white;
+    }
+
+    #icon-support {
+        margin: 0 0 0 42.3vw;
+    }
+
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.063vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.625vw 4.4vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 12.288vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 12.288vw;
+    }
+
+    /* payment */
+
+    main {
+        display: grid;
+        grid-template-areas: 
+        "left right";
+        margin: 2vw 14.323vw 8.323vw 14.323vw;
+        justify-content: right;
+    }
+
+    main > #product-payment {
+        grid-area: left;
+    }
+
+    main > #product-resume {
+        grid-area: right;
+    }
+
+    #product-payment {
+        width: 51vw;
+        background-color: var(--white);
+        margin: 5vw 0vw 15vw 0;
+        border-radius: 0.313vw;
+    }
+
+    #product-resume {
+        width: 27.8vw;;
+        background-color: var(--white);
+        margin: 5vw -2vw 10vw 3vw;
+        border-radius: 0.313vw;
+    }
+
+    #product-title {
+        text-transform: uppercase;
+        margin: 1vw 0 1vw 1vw;
+        font-size: 1.2vw;
+    }
+
+    #payment {
+        margin: 0 0 0 1vw;
+    }
+
+    #payment-pix {
+        background-color: var(--white);
+        width: 49vw;
+        height: 2.327vw;
+        font-size: 0.929vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 0 0 1vw;
+        margin: 0 0 1vw 0;
+        color: rgba(0, 0, 0, 0.644);
+        border: 1px solid #42464db0;
+    }
+
+    #payment-pix:active, #payment-pix:focus {
+        border-color: var(--principal-color);
+    }
+
+    #payment-card {
+        background-color: var(--white);
+        width: 49vw;
+        height: 2.327vw;
+        font-size: 0.929vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 0 0 1vw;
+        margin: 0 0 3vw 0;
+        color: rgba(0, 0, 0, 0.644);
+        border: 1px solid #42464db0;   
+    }
+
+    #payment-card:active, #payment-card:focus {
+        border-color: var(--principal-color);
+    }
+
+    #redirect-pix {
+        margin: 0 0 0 44.3vw;
+    }
+
+    .redirect {
+        margin: 0 0 0 36.3vw;
+    }
+
+    #change {
+        margin-left: -1.5vw;
+    }
+
+    #title {
+        text-transform: uppercase;
+        margin: 1vw 1vw 0.5vw 1vw;
+        font-size: 1.2vw;
+    }
+
+    #value, #discount {
+        margin: 1vw 1vw 0.5vw 1vw;
+        border-bottom: 1px solid #42464db0;
+        color: #42464db0;
+        padding: 0 0 0.5vw 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #total-value {
+        margin: 2vw 1vw 1vw 1vw;
+        border-bottom: 1px solid #42464db0;
+        color: #42464db0;
+        padding: 0 0 0.5vw 0;
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item3";
+        grid-template-columns: 6.3vw 9.9vw;
+        justify-content: left;
+        column-gap: 1.7vw;
+    }
+
+    #total-value > #total-value {
+        grid-area: item1;
+    }
+    
+    #total-value > #change {
+        grid-area: item2;
+    }
+
+    #total-value > #price {
+        grid-area: item3;
+    }
+
+    #discount span {
+        color: green;
+    }
+
+    #buy-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--principal-color);
+        width: 25.8vw;
+        height: 2.5vw;
+        margin-bottom: 0.885vw;
+        font-size: 0.829vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        margin: 0 1vw 2vw 1vw;
+        border: none;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 5.45vw;
+    }    
+}
+
+@media only screen 
+and (min-width : 1824px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: #F2F3F4;
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+
+    header {
+        box-shadow: 0px 0px 0.521vw 0.352vw #eaeaea;
+    }
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 4.167vw;
+        margin-left: 14.323vw;
+        padding-right: 0.521vw;
+    }
+    
+    #company-name {
+        font-size: 1.25vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+        margin-right: 4.208vw;
+    }
+
+    /* register */
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.052vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.521vw 4.484vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 14.323vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 14.323vw;
+    }
+
+
+    /* payment */
+
+    main {
+        display: grid;
+        grid-template-areas: 
+        "left right";
+        margin: 2vw 14.323vw 8.323vw 14.323vw;
+        justify-content: right;
+    }
+
+    main > #product-payment {
+        grid-area: left;
+    }
+
+    main > #product-resume {
+        grid-area: right;
+    }
+
+    #product-payment {
+        width: 51vw;
+        background-color: var(--white);
+        margin: 5vw 2vw 15vw 0;
+        border-radius: 0.313vw;
+    }
+
+    #product-resume {
+        width: 25.5vw;
+        background-color: var(--white);
+        margin: 5vw 0 10vw 0;
+        border-radius: 0.313vw;
+    }
+
+    #product-title {
+        text-transform: uppercase;
+        margin: 1vw 0 1vw 1vw;
+    }
+
+    #payment {
+        margin: 0 0 0 1vw;
+    }
+
+    #payment-pix {
+        background-color: var(--white);
+        width: 49vw;
+        height: 2.227vw;
+        font-size: 0.729vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 0 0 1vw;
+        margin: 0 0 1vw 0;
+        color: rgba(0, 0, 0, 0.644);
+        border: 1px solid #42464db0;
+    }
+
+    #payment-pix:active, #payment-pix:focus {
+        border-color: var(--principal-color);
+    }
+
+    #payment-card {
+        background-color: var(--white);
+        width: 49vw;
+        height: 2.227vw;
+        font-size: 0.729vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 0 0 1vw;
+        margin: 0 0 3vw 0;
+        color: rgba(0, 0, 0, 0.644);
+        border: 1px solid #42464db0;
+        
+    }
+
+    #payment-card:active, #payment-card:focus {
+        border-color: var(--principal-color);
+    }
+
+    #redirect-pix {
+        margin: 0 0 0 45.3vw;
+    }
+
+    .redirect {
+        margin: 0 0 0 39vw;
+    }
+
+    #title {
+        text-transform: uppercase;
+        margin: 1vw 1vw 0.5vw 1vw;
+    }
+
+    #value, #discount {
+        margin: 1vw 1vw 0.5vw 1vw;
+        border-bottom: 1px solid #42464db0;
+        color: #42464db0;
+        padding: 0 0 0.5vw 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #total-value {
+        margin: 2vw 1vw 1vw 1vw;
+        border-bottom: 1px solid #42464db0;
+        color: #42464db0;
+        padding: 0 0 0.5vw 0;
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item3";
+        grid-template-columns: 5.2vw 9.7vw;
+        justify-content: left;
+        column-gap: 1.7vw;
+    }
+
+    #total-value > #total-value {
+        grid-area: item1;
+    }
+    
+    #total-value > #change {
+        grid-area: item2;
+    }
+
+    #total-value > #price {
+        grid-area: item3;
+    }
+
+    #discount span {
+        color: green;
+    }
+
+    #buy-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--principal-color);
+        width: 23.5vw;
+        height: 2.5vw;
+        margin-bottom: 0.885vw;
+        font-size: 0.829vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        margin: 0 1vw 2vw 1vw;
+        border: none;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 5.45vw;
+    }
+
+}

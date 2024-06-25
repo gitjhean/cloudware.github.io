@@ -1,0 +1,581 @@
+@media only screen 
+and (min-width : 1600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: var(--white);
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+        
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 5vw;
+        margin-left: 12.288vw;
+        padding-right: 0.625vw;
+    }
+    
+    #company-name {
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+    }
+    
+    /* searchbar */
+    
+    .menu-searchbar {
+        display: flex;
+        line-height: 1.458vw;
+        align-items: center;
+        position: relative;
+        width: 36.423vw;
+        margin-right: 10.3vw;
+    }
+       
+    .searchbar-input {
+        width: 100%;
+        height: 2.083vw;
+        line-height: 1.458vw;
+        padding: 0 1vw;
+        padding-left: 2.5vw;
+        border: 0.104vw solid transparent;
+        border-radius: 0.417vw;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+    }
+       
+    .searchbar-input::placeholder {
+        color: #9e9ea7;
+    }
+       
+    .searchbar-input:focus, input:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 0.208vw rgb(234 76 137 / 10%);
+    }
+       
+    .icon {
+        position: absolute;
+        left: 1vw;
+        fill: #9e9ea7;
+        width: 1vw;
+        height: 1vw;
+    }
+
+    /* register */
+
+    #support {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5vw;
+    }
+
+    #session {
+        color: white;
+    }
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+        margin: 0 0 0 3vw;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    #icon-support {
+        margin: 0 0 0 46.7vw;
+    }
+    
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.063vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.625vw 4.4vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 12.288vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 12.288vw;
+    }
+
+    /* main */
+
+    #product-name {
+        font-size: 20px;
+    }
+
+    #product-info {
+        display: grid;
+        grid-template-areas: 
+        "top top top"
+        "left left right";
+        margin: 2vw 14.323vw 8.323vw 14.323vw;
+    }
+    
+    #product-info > #product-name {
+        grid-area: top;
+    }
+    
+    #product-info > picture {
+        grid-area: left;
+    }
+
+    #product-info > #product-detail {
+        grid-area: right;
+    }
+
+    picture {
+        display: flex;
+        justify-content: right;
+        margin: 3vw 0 0 0;
+    }
+
+    #product-image {
+        width: 60%;
+    }
+
+    #product-value {
+        color: var(--text-grey);
+        text-align: justify;
+        width: 20.313vw;
+        font-size: 1.129vw;
+        line-height: 1.042vw;
+        margin: 6vw 0 0 8vw;
+    }
+    
+    #product-value span {
+        color: #008000;
+        font-weight: 700;
+        font-size: 1.25vw;
+        font-size: 32px;
+    }
+    
+    #product-value #pix-price {
+        color: var(--text-grey);
+        text-align: justify;
+        font-size: 0.829vw;
+        font-weight: normal;
+    }
+
+    #product-method {
+        font-size: 0.829vw;
+        margin: 1.5vw 0 0 8vw;
+    }
+
+    #product-method #span1 {
+        color: #42464D;
+        font-weight: 700;
+
+    }
+    
+    #product-method #span2 {
+        color: #42464D;
+        font-weight: 700;
+    }
+
+    #product-method #span3 {
+        color: #42464D;
+        font-weight: 700;
+    }
+
+    #product-info #buy-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--principal-color);
+        width: 18.713vw;
+        height: 2.227vw;
+        margin-bottom: 0.885vw;
+        font-size: 0.729vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        margin: 3vw 0 0 8vw;
+    }
+
+    #product-info #buy-button:hover{
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    #product-border{
+        border: 1.3vw solid #F2F3F4;
+        width: 100%;
+        margin: 0 0 4.323vw 0;
+    }
+
+    /* technical info */
+
+    #product-desc {
+        margin: 0 0 0 14.323vw;
+    }
+
+    #product-title {
+        text-transform: uppercase;
+        margin: 0 0 1vw 0;
+        font-size: 20px;
+    }
+
+    #product-technical {
+        margin: 0 0 4.323vw 0;
+        font-size: 14px;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 4.167vw;
+    }
+}
+    
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: var(--white);
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 4.167vw;
+        margin-left: 14.323vw;
+        padding-right: 0.521vw;
+    }
+    
+    #company-name {
+        font-size: 1.25vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+    }
+    
+    /* searchbar */
+    
+    .menu-searchbar {
+        display: flex;
+        line-height: 1.458vw;
+        align-items: center;
+        position: relative;
+        width: 33.623vw;
+        margin-right: 10.8vw;
+    }
+       
+    .searchbar-input {
+        width: 100%;
+        height: 2.083vw;
+        line-height: 1.458vw;
+        padding: 0 1vw;
+        padding-left: 2.5vw;
+        border: 0.104vw solid transparent;
+        border-radius: 0.417vw;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+    }
+       
+    .searchbar-input::placeholder {
+        color: #9e9ea7;
+    }
+       
+    .searchbar-input:focus, input:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 0.208vw rgb(234 76 137 / 10%);
+    }
+       
+    .icon {
+        position: absolute;
+        left: 1vw;
+        fill: #9e9ea7;
+        width: 1vw;
+        height: 1vw;
+    }
+
+    /* register */
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    #support {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5vw;
+    }
+
+    #session {
+        color: white;
+    }
+
+    #icon-support {
+        margin: 0 0 0 46.7vw;
+    }
+    
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.052vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.521vw 4.484vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 14.323vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 14.323vw;
+    }
+
+    /* main */
+
+    #product-name {
+        font-size: 24px;
+    }
+
+    #product-info {
+        display: grid;
+        grid-template-areas: 
+        "top top top"
+        "left left right";
+        margin: 2vw 14.323vw 8.323vw 14.323vw;
+    }
+    
+    #product-info > #product-name {
+        grid-area: top;
+    }
+    
+    #product-info > picture {
+        grid-area: left;
+    }
+
+    #product-info > #product-detail {
+        grid-area: right;
+    }
+
+    picture {
+        display: flex;
+        justify-content: right;
+        margin: 3vw 0 0 0;
+    }
+
+    #product-image {
+        width: 60%;
+    }
+
+    #product-value {
+        color: var(--text-grey);
+        text-align: justify;
+        width: 15.313vw;
+        font-size: 0.929vw;
+        line-height: 1.042vw;
+        margin: 6vw 0 0 8vw;
+    }
+    
+    #product-value span {
+        color: #008000;
+        font-weight: 700;
+        font-size: 1.25vw;
+        font-size: 36px;
+    }
+    
+    #product-value #pix-price {
+        color: var(--text-grey);
+        text-align: justify;
+        font-size: 0.729vw;
+        font-weight: normal;
+    }
+
+    #product-method {
+        font-size: 0.729vw;
+        margin: 1.5vw 0 0 8vw;
+    }
+
+    #product-method #span1 {
+        color: #42464D;
+        font-weight: 700;
+
+    }
+    
+    #product-method #span2 {
+        color: #42464D;
+        font-weight: 700;
+    }
+
+    #product-method #span3 {
+        color: #42464D;
+        font-weight: 700;
+    }
+
+    #product-info #buy-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--principal-color);
+        width: 16.513vw;
+        height: 2.227vw;
+        margin-bottom: 0.885vw;
+        font-size: 0.729vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 0.313vw;
+        cursor: pointer;
+        margin: 3vw 0 0 8vw;
+    }
+
+    #product-info #buy-button:hover{
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    #product-border{
+        border: 1.3vw solid #F2F3F4;
+        width: 100%;
+        margin: 0 0 4.323vw 0;
+    }
+
+    /* technical info */
+
+    #product-desc {
+        margin: 0 14.323vw 0 14.323vw;
+        text-align: justify;
+    }
+
+    #product-title {
+        text-transform: uppercase;
+        margin: 0 0 1vw 0;
+    }
+
+    #product-technical {
+        margin: 0 0 4.323vw 0;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 4.167vw;
+    }
+}
