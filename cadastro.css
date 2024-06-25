@@ -1,0 +1,394 @@
+@media only screen 
+and (min-width : 1600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: var(--white);
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+        
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 5vw;
+        margin-left: 12.288vw;
+        padding-right: 0.625vw;
+    }
+    
+    #company-name {
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+        margin-right: 7vw;
+    }
+
+    /* register and login menu */
+
+    #menu {
+        display: grid;
+        grid-template-areas: 
+        "login register";
+    }
+
+    #menu > #login-menu {
+        grid-area: login;
+    }
+    
+    #menu > #register-menu {
+        grid-area: register;
+    }
+
+    /* login */
+
+    #login-menu {
+        background-color: #fafafa;
+        width: 50vw;
+        height: 39.35vw;
+        border-right: 1px solid #eaeaea;
+    }
+
+    #login-title {
+        margin-left: 20vw;
+        padding-top: 11vw;
+    }
+
+    #login-input {
+        line-height: 1.458vw;
+        width: 23.623vw;
+        margin: 1.363vw 0px 0px 0px;
+        margin-left: 20vw;
+    }
+
+    #login-password {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #button-login {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0px 0px 0px;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #button-login:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+
+    #icon-support {
+        margin: 0 0 0 46.7vw;
+    }
+
+    /* input style*/
+       
+    .account-login {
+        width: 23vw;
+        height: 2.583vw;
+        line-height: 1.458vw;
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: 400ms ease-out;
+        box-shadow: inset 0px 0px 0px 0px #eaeaea;
+        font-size: 16px
+    }
+       
+    .account-login::placeholder {
+        color: #2a2c2f;
+    }
+       
+    .account-login:focus {
+        border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-radius: 2px;
+        border-width: 1px;
+        transition: 100ms ease-in;
+        outline: none;
+    }
+
+    /* register */
+
+    #register-menu {
+        background-color: #fafafa;
+        width: 50vw;
+        height: 39.35vw;
+    }
+
+    #register-title {
+        margin-left: 7vw;
+        padding-top: 11vw;
+    }
+
+    #register-input {
+        line-height: 1.458vw;
+        width: 23.623vw;
+        margin: 1.363vw 0px 0px 0px;
+        margin-left: 7vw;
+    }
+
+    #register-password {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #register-repassword {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #button-register {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0px 0px 0px;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #button-register:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 5.45vw;
+    }
+
+}
+
+@media only screen 
+and (min-width : 1824px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: var(--white);
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+
+    header {
+        box-shadow: 0px 0px 0.521vw 0.352vw #eaeaea;
+    }
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 4.167vw;
+        margin-left: 14.323vw;
+        padding-right: 0.521vw;
+    }
+    
+    #company-name {
+        font-size: 1.25vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+        margin-right: 5.208vw;
+    }
+
+    /* register and login menu */
+
+    #menu {
+        display: grid;
+        grid-template-areas: 
+        "login register";
+    }
+
+    #menu > #login-menu {
+        grid-area: login;
+    }
+    
+    #menu > #register-menu {
+        grid-area: register;
+    }
+
+    /* login */
+
+    #login-menu {
+        background-color: #fafafa;
+        width: 50vw;
+        height: 40.95vw;
+        border-right: 1px solid #eaeaea;
+    }
+
+    #login-title {
+        margin-left: 20vw;
+        padding-top: 11vw;
+    }
+
+    #login-input {
+        line-height: 1.458vw;
+        width: 23.623vw;
+        margin: 1.363vw 0px 0px 0px;
+        margin-left: 20vw;
+    }
+
+    #password-input {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #button-login {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0px 0px 0px;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #button-login:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+
+    /* input style*/
+       
+    .account-login {
+        width: 23vw;
+        height: 2.583vw;
+        line-height: 1.458vw;
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: 400ms ease-out;
+        box-shadow: inset 0px 0px 0px 0px #eaeaea;
+        font-size: 16px
+    }
+       
+    .account-login::placeholder {
+        color: #2a2c2f;
+    }
+       
+    .account-login:focus {
+        border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-radius: 2px;
+        border-width: 1px;
+        transition: 100ms ease-in;
+        outline: none;
+    }
+
+    /* register */
+
+    #register-menu {
+        background-color: #fafafa;
+        width: 50vw;
+        height: 40.95vw;
+    }
+
+    #register-title {
+        margin-left: 7vw;
+        padding-top: 11vw;
+    }
+
+    #register-input {
+        line-height: 1.458vw;
+        width: 23.623vw;
+        margin: 1.363vw 0px 0px 0px;
+        margin-left: 7vw;
+    }
+
+    #password-input {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #repassword-input {
+        margin: 1.363vw 0px 0px 0px;
+    }
+
+    #button-register {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0px 0px 0px;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #button-register:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 5.45vw;
+    }
+
+}

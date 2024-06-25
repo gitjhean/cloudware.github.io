@@ -1,0 +1,470 @@
+@media only screen 
+and (min-width : 1600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    body {
+        background-color: #F2F3F4;
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+        
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 5vw;
+        margin-left: 12.288vw;
+        padding-right: 0.625vw;
+    }
+    
+    #company-name {
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+    }
+    
+    /* searchbar */
+    
+    .menu-searchbar {
+        display: flex;
+        line-height: 1.458vw;
+        align-items: center;
+        position: relative;
+        width: 36.423vw;
+        margin-right: 10.3vw;
+    }
+       
+    .searchbar-input {
+        width: 100%;
+        height: 2.083vw;
+        line-height: 1.458vw;
+        padding: 0 1vw;
+        padding-left: 2.5vw;
+        border: 0.104vw solid transparent;
+        border-radius: 0.417vw;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+    }
+       
+    .searchbar-input::placeholder {
+        color: #9e9ea7;
+    }
+       
+    .searchbar-input:focus, input:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 0.208vw rgb(234 76 137 / 10%);
+    }
+       
+    .icon {
+        position: absolute;
+        left: 1vw;
+        fill: #9e9ea7;
+        width: 1vw;
+        height: 1vw;
+    }
+
+    /* register */
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+        margin: 0 0 0 51.3vw;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.063vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.625vw 2.2vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 12.288vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 12.288vw;
+    }
+
+    /* support */
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #support {
+        height: 35vw;
+        background-color: #FFFFFF;
+        width: 30vw;
+        margin: 5vw 0 5vw 0;
+    }
+
+    #support #title {
+        margin: 3vw 13.5vw 0 3.5vw;
+    }
+
+    .support-input {
+        width: 23vw;
+        line-height: 1.458vw;
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: 400ms ease-out;
+        font-size: 16px;
+        margin: 0 0 1vw 0;
+    }
+
+    .support-input::placeholder {
+        color: #2a2c2f;
+    }
+
+    .support-input:focus {
+        border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-radius: 2px;
+        border-width: 1px;
+        transition: 100ms ease-in;
+        outline: none;
+    }
+
+    #username {
+        margin: 2vw 0 1vw 0;
+    }
+
+    #problem {
+        padding: 1vw 5vw 10vw 1vw;
+    }
+
+    #send-support {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0 5vw 0;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #send-support:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+    
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 5vw;
+    }  
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    body {
+        background-color: #F2F3F4;
+    }
+    
+    :root {
+        --grey-text: #7F858D;
+        --black-text: black;
+        --principal-color: #DB5461;
+        --product-desc: #42464D;
+        --white: #FFFFFF;
+    }
+    
+    /* header */
+    
+    header, #company {
+        display: flex;
+        align-items: center;
+        background-color: var(--principal-color);
+    }
+    
+    #company #logo-figure, #company-name {
+        cursor: pointer;
+    }
+    
+    #logo-figure {
+        height: 4.167vw;
+        margin-left: 14.323vw;
+        padding-right: 0.521vw;
+    }
+    
+    #company-name {
+        font-size: 1.25vw;
+        text-transform: uppercase;
+        color: var(--white);
+        font-weight: 700;
+    }
+    
+    /* searchbar */
+    
+    .menu-searchbar {
+        display: flex;
+        line-height: 1.458vw;
+        align-items: center;
+        position: relative;
+        width: 33.623vw;
+        margin-right: 10.8vw;
+    }
+       
+    .searchbar-input {
+        width: 100%;
+        height: 2.083vw;
+        line-height: 1.458vw;
+        padding: 0 1vw;
+        padding-left: 2.5vw;
+        border: 0.104vw solid transparent;
+        border-radius: 0.417vw;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+    }
+       
+    .searchbar-input::placeholder {
+        color: #9e9ea7;
+    }
+       
+    .searchbar-input:focus, input:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 0.208vw rgb(234 76 137 / 10%);
+    }
+       
+    .icon {
+        position: absolute;
+        left: 1vw;
+        fill: #9e9ea7;
+        width: 1vw;
+        height: 1vw;
+    }
+
+    /* register */
+
+    #register-login {
+        background-color: var(--white);
+        border: none;
+        border-radius: 0.325vw;
+        padding: 0.325vw 1.250vw 0.325vw 1.250vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--principal-color);
+        cursor: pointer;
+        transition: ease-out 200ms;
+        margin: 0 0 0 50.8vw;
+    }
+
+    #register-login:hover {
+        color: var(--white);
+        background-color: black;
+        transform: scale(1.05);
+        transition: ease-in 100ms;
+    }
+    
+    /* nav */
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--principal-color);
+    }
+    
+    .navmenu {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--white);
+        cursor: pointer;
+        border-left: 0.052vw solid rgba(255, 255, 255, 0.400);
+        padding: 0.521vw 4.484vw;
+    }
+    
+    .navmenu:hover {
+        color: black;
+        background-color: #cc4b58;
+    }
+    
+    #menu-pcgamer {
+        margin-left: 14.323vw;
+        border-left: 0;
+    }
+    
+    #menu-peripherals {
+        margin-right: 14.323vw;
+    }
+
+    /* support */
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #support {
+        height: 35vw;
+        background-color: #FFFFFF;
+        width: 30vw;
+        margin: 5vw 0 5vw 0;
+    }
+
+    #support #title {
+        margin: 3vw 13.5vw 0 3.5vw;
+    }
+
+    .support-input {
+        width: 23vw;
+        line-height: 1.458vw;
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: 400ms ease-out;
+        font-size: 16px;
+        margin: 0 0 1vw 0;
+    }
+
+    .support-input::placeholder {
+        color: #2a2c2f;
+    }
+
+    .support-input:focus {
+        border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-radius: 2px;
+        border-width: 1px;
+        transition: 100ms ease-in;
+        outline: none;
+    }
+
+    #username {
+        margin: 2vw 0 1vw 0;
+    }
+
+    #problem {
+        padding: 1vw 5vw 10vw 1vw;
+    }
+
+    #send-support {
+        width: 23.023vw;
+        color: var(--white);
+        padding: 0.521vw 0.781vw 0.521vw 0.781vw;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--principal-color);
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin: 1.363vw 0 5vw 0;
+        cursor: pointer;
+        transition: 200ms ease-out;
+    }
+
+    #send-support:hover {
+        color: black;
+        transform: scale(1.05);
+        transition: 100ms ease-in;
+    }
+    
+    
+    /* footer */
+    
+    footer {
+        background-color: var(--principal-color);
+        height: 4.167vw;
+    }
+
+}
+
