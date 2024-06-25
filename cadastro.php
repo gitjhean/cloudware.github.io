@@ -25,7 +25,7 @@ if(isset($_POST['login-text']) || isset($_POST['login-password'])) {
                 session_start();
             }
 
-            $_SESSION['login'] = $usuario['nome'];
+            $_SESSION['login'] = $usuario["jheanlucas"];
 
             header("Location: logado\index.php");
 
